@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f7f7f7" >
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:background="#ffffff">
+        <LinearLayout 
+            android:id="@+id/ll_back"
+            android:layout_weight="1"
+            style="@style/linearlayout_for_left_menu_comment_page"
+            >
+            <ImageView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/back_btn_normal"
+                />
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="返回"
+                android:textSize="22sp"
+                android:textColor="@color/pressed"/>
+        </LinearLayout>
+        <LinearLayout 
+            android:layout_weight="2"
+            style="@style/linearlayout_for_left_menu_comment_page"
+            >
+            <TextView 
+                android:id="@+id/text_title"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:text="模拟数据"
+                android:textSize="26sp"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+        <LinearLayout 
+            android:id="@+id/ll_commint"
+            android:layout_weight="1"
+            style="@style/linearlayout_for_left_menu_comment_page"
+            >
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="提交"
+                android:textSize="22sp"
+                android:textColor="@color/pressed"
+                android:visibility="visible"
+                />
+        </LinearLayout>
+    </LinearLayout>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#b0b0b0" />
+
+        <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_margin="15dp"
+            android:background="@drawable/background_about_our">
+        <EditText 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="亲 , 用的不爽? 请输入您的问题或者意见呗..."
+            android:background="@null"
+            android:layout_alignParentTop="true"
+            android:textSize="18sp"
+            android:padding="15sp"/>
+</RelativeLayout>
+</LinearLayout>

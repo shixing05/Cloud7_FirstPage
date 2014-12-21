@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="pressed">#fa9143</color>
+    <color name="normal">#b0b0b0</color>
+    <color name="version">#fa9143</color>
+    <color name="write">#ffffff</color>
+    <color name="version_nomal">#f7f7f7</color>
+    <color name="black">#88000000</color>
+</resources>

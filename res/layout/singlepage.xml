@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:background="#f7f7f7"
+            android:gravity="center" >
+
+            <RelativeLayout
+                android:id="@+id/rl_model"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_centerInParent="true" >
+
+                <TextView
+                    android:id="@+id/tv_model"
+                    android:layout_width="85dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/background_shape_version_norm"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:padding="6dp"
+                    android:text="模板"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_single_page"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_centerInParent="true"
+                android:layout_toRightOf="@id/rl_model" >
+
+                <TextView
+                    android:id="@+id/tv_single_page"
+                    android:layout_width="85dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/background_shape_single_page_select"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:padding="6dp"
+                    android:paddingLeft="20dp"
+                    android:text="单页"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:clickable="true"
+                android:src="@drawable/finish_btn_normal" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

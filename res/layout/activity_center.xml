@@ -1,0 +1,180 @@
+<com.cloud7.firstpage.view.MySlidingMenu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ms"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/left_menu_backaground"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <include layout="@layout/menu" 
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff" >
+
+            <LinearLayout
+                android:id="@+id/ll_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:background="#f7f7f7" >
+
+                    <ImageView
+                        android:id="@+id/btn_selding_menu"
+                        style="@style/imageview"
+                        android:clickable="true"
+                        android:src="@drawable/list_btn_narmal"
+                        android:visibility="visible" />
+
+                    <TextView
+                        android:id="@+id/tv_title"
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="3"
+                        android:gravity="center"
+                        android:text="我的初页"
+                        android:textColor="#3d4245"
+                        android:textSize="26sp" />
+
+                    <ImageView
+                        android:id="@+id/btn_add"
+                        style="@style/imageview"
+                        android:clickable="true"
+                        android:src="@drawable/add_btn_normal"
+                        android:visibility="visible" />
+
+                    <ImageView
+                        android:id="@+id/btn_refresh"
+                        style="@style/imageview"
+                        android:clickable="true"
+                        android:src="@drawable/refresh_btn_normal"
+                        android:visibility="invisible" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="#b0b0b0" />
+            </LinearLayout>
+
+
+                <WebView 
+	               android:layout_below="@id/ll_title"
+	                android:id="@+id/webview"
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent"
+	                android:visibility="invisible"
+                    />
+            <FrameLayout
+                android:id="@+id/fl_guid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="3dp"
+                    android:layout_marginTop="55dp"
+                    android:src="@drawable/tipsview" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:layout_alignParentBottom="true"
+                android:background="#f7f7f7"
+                android:orientation="vertical" >
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="#b0b0b0" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:background="#f7f7f7"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal" >
+
+                        <RelativeLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_gravity="center" >
+
+                            <TextView
+                                android:id="@+id/tv_my_first_page"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:text=" 我的初页"
+                                android:textColor="@color/pressed"
+                                android:textSize="20sp" />
+
+                            <ImageView
+                                android:id="@+id/iv_my_first_pager"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_toLeftOf="@+id/tv_my_first_page"
+                                android:src="@drawable/mine_btn_selected" />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="45dp"
+                        android:layout_gravity="center_vertical"
+                        android:background="#b0b0b0" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal" >
+
+                        <RelativeLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_gravity="center" >
+
+                            <TextView
+                                android:id="@+id/tv_hot_first_page"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:text=" 热门初页"
+                                android:textColor="@color/normal"
+                                android:textSize="20sp" />
+
+                            <ImageView
+                                android:id="@+id/iv_hot_first_page"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_toLeftOf="@+id/tv_hot_first_page"
+                                android:src="@drawable/hot_btn_deselected" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</com.cloud7.firstpage.view.MySlidingMenu>
